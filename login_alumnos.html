@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso Alumnos - ITSZ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header-banner">
+        <img src="img/logo_educacion.png" alt="Logo Educación">
+        <img src="img/logo_veracruz.png" alt="Logo Veracruz">
+        <img src="img/logo_sev.png" alt="Logo SEV">
+        <img src="img/logo_tecnm.png" alt="Logo Tecnológico Nal. México">
+        <img src="img/logo_itsz.png" alt="Logo ITSZ">
+    </header>
+
+    <div class="container text-center mt-4">
+        <h1 class="main-title">TECNOLÓGICO NACIONAL DE MÉXICO<br>INSTITUTO TECNOLÓGICO SUPERIOR DE ZONGOLICA</h1>
+    </div>
+
+    <div class="container d-flex justify-content-center align-items-start flex-grow-1 pt-5">
+        <div class="login-form-container p-5 rounded shadow-lg">
+            <h2 class="form-title mb-4">ACCESOS PARA ALUMNOS:</h2>
+            <form id="loginForm" action="php/login.php" method="POST">
+                <div class="row align-items-center mb-3">
+                    <label for="cuenta" class="col-sm-4 col-form-label text-md-end text-white-50">CUENTA:</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="cuenta" name="cuenta" required>
+                    </div>
+                </div>
+                <div class="row align-items-center mb-4">
+                    <label for="password" class="col-sm-4 col-form-label text-md-end text-white-50">CONTRASEÑA:</label>
+                    <div class="col-sm-8">
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <button type="submit" class="btn btn-custom flex-grow-1 me-2">INGRESAR</button>
+                    <a href="recuperar_contrasena.html" class="btn btn-info-custom d-flex align-items-center text-decoration-none">
+                        <span class="info-icon me-2">i</span> Recuperar contraseña
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/login_alumnos.js"></script>
+</body>
+</html>
