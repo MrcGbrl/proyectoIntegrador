@@ -1,0 +1,134 @@
+body {
+    background-color: #2c3e50; /* Color de fondo oscuro similar al de tu imagen */
+    color: #ecf0f1; /* Color de texto claro */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.header-banner {
+    background-color: #34495e; /* Un tono más claro para el banner */
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 2px solid #2980b9; /* Borde inferior para separar */
+}
+.header-banner img {
+    height: 40px; /* Ajusta el tamaño de los logos */
+    margin: 0 5px;
+}
+.main-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #ecf0f1;
+}
+@media (min-width: 768px) {
+    .main-title {
+        font-size: 2.2em;
+    }
+}
+
+/* Estilos para las tarjetas de inicio (Alumnos/Docentes) */
+.custom-card {
+    background-color: #f8f9fa; /* Fondo claro para las tarjetas */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.2s;
+    border: none;
+}
+.custom-card:hover {
+    transform: translateY(-5px);
+}
+.card-title-custom { /* Usado para evitar conflicto con .card-title de Bootstrap */
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #34495e; /* Color oscuro para el título de la tarjeta */
+}
+
+/* Estilos de botones generales */
+.btn-custom {
+    background-color: #2980b9; /* Color de botón azul similar a Bootstrap */
+    border-color: #2980b9;
+    color: white;
+    font-size: 1.1em;
+    padding: 10px 25px;
+    border-radius: 5px;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+.btn-custom:hover {
+    background-color: #3498db;
+    border-color: #3498db;
+    color: white;
+}
+
+/* Estilos para formularios de login/recuperación */
+.login-form-container, .recovery-form-container {
+    background-color: #34495e; /* Fondo del contenedor del formulario */
+    color: white;
+    max-width: 550px; /* Ancho máximo para el formulario */
+    width: 100%;
+}
+.form-title {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ecf0f1;
+}
+.form-control {
+    background-color: #ecf0f1; /* Fondo claro para inputs */
+    border: 1px solid #ced4da;
+    color: #2c3e50; /* Color de texto oscuro para inputs */
+}
+.form-control:focus {
+    background-color: white;
+    border-color: #2980b9;
+    box-shadow: 0 0 0 0.25rem rgba(41, 128, 185, 0.25);
+}
+.btn-info-custom {
+    background-color: #6c757d; /* Gris oscuro para el botón de info */
+    border-color: #6c757d;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+.btn-info-custom:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+    color: white;
+}
+.info-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+/* Estilos para el menú de opciones */
+.options-menu-container {
+    background-color: #34495e;
+    color: #ecf0f1;
+    max-width: 800px;
+}
+.menu-item {
+    background-color: #49637e; /* Fondo más oscuro para items de lista */
+    border-color: #34495e;
+    margin-bottom: 5px; /* Espacio entre items */
+    color: white;
+}
+.menu-item:last-child {
+    margin-bottom: 0;
+}
+.menu-item span {
+    font-size: 1.1em;
+}
